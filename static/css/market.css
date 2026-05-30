@@ -959,15 +959,33 @@ button:focus-visible, a:focus-visible { outline-offset: 2px; }
   width: 100%;
 }
 
-/* Dashboard thumbnail */
-.dashboard-thumb {
-  width: 44px;
-  height: 44px;
-  border-radius: 4px;
-  object-fit: cover;
-  background: var(--gray-100);
-  display: block;
+/* Admin Dashboard Styles */
+.alert-warning {
+  background: var(--orange-200);
+  border: 1px solid var(--orange-500);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  margin-bottom: 24px;
 }
+.alert-warning h3 {
+  color: #856404;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+.alert-warning ul {
+  color: #856404;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.dashboard-header h1 { margin: 0; }
+
 
 /* Stat card icons */
 .stat-icon {
