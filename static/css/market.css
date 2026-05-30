@@ -182,7 +182,7 @@ button:focus-visible, a:focus-visible { outline-offset: 2px; }
 
 /* Hero */
 .hero {
-  background: linear-gradient(135deg, var(--green-900) 0%, var(--green-700) 50%, var(--green-500) 100%);
+  background: var(--green-900);
   color: var(--white);
   text-align: center;
   padding: 60px 20px;
@@ -335,11 +335,11 @@ button:focus-visible, a:focus-visible { outline-offset: 2px; }
 }
 
 /* Product category colors for placeholders */
-.cat-fruits-vegetables { background: linear-gradient(135deg, var(--green-500), var(--green-700)); }
-.cat-dairy-products { background: linear-gradient(135deg, #4a90d9, #2c5f8a); }
-.cat-snacks { background: linear-gradient(135deg, var(--orange-500), var(--orange-600)); }
-.cat-beverages { background: linear-gradient(135deg, #8b5cf6, #6d28d9); }
-.cat-household-essentials { background: linear-gradient(135deg, var(--gray-500), var(--gray-700)); }
+.cat-fruits-vegetables { background: var(--green-700); }
+.cat-dairy-products { background: #2c5f8a; }
+.cat-snacks { background: var(--orange-600); }
+.cat-beverages { background: #6d28d9; }
+.cat-household-essentials { background: var(--gray-700); }
 
 /* Small placeholder for cart / checkout thumbnails */
 .thumb-placeholder {
