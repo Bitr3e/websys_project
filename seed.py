@@ -19,10 +19,10 @@ categories = {
         'slug': 'fruits-vegetables',
         'description': 'Fresh fruits and vegetables sourced daily.',
         'products': [
-            ('Dole Bananas', 65.00, 100, 'products/DOLEbanana.png'),
-            ('Washington Red Apples', 90.00, 80, 'products/WashingtonApple.jpg'),
-            ('Baguio Carrots', 55.00, 60, 'products/carrot.webp'),
-            ('Fresh Tomatoes', 45.00, 75, 'products/Tomato.jpg'),
+            ('Dole Bananas', 65.00, 100, 'products/fruits/banana.png'),
+            ('Washington Red Apples', 90.00, 80, 'products/fruits/washington red apple.jpg'),
+            ('Baguio Carrots', 55.00, 60, 'products/fruits/baguio_carrots.webp'),
+            ('Fresh Tomatoes', 45.00, 75, 'products/fruits/tomatoes.webp'),
         ],
     },
     'dairy-products': {
@@ -30,10 +30,10 @@ categories = {
         'slug': 'dairy-products',
         'description': 'Fresh dairy and chilled essentials.',
         'products': [
-            ('Alaska Fresh Milk', 85.00, 50, 'products/AlaskaFreshMilk.webp'),
-            ('Eden Cheese', 120.00, 40, 'products/EdenCheese.jpg'),
-            ('Magnolia Butter', 95.00, 35, 'products/MagnoliaButter.png'),
-            ('Nestlé Yogurt', 70.00, 45, 'products/NestleYogurt.jpg'),
+            ('Alaska Fresh Milk', 85.00, 50, 'products/dairy/fresh_milk.webp'),
+            ('Eden Cheese', 120.00, 40, 'products/dairy/eden_cheese.webp'),
+            ('Magnolia Butter', 95.00, 35, 'products/dairy/magnolia_butter.jpg'),
+            ('Nestlé Yogurt', 70.00, 45, 'products/dairy/nestle_yogurt.jpg'),
         ],
     },
     'snacks': {
@@ -41,10 +41,10 @@ categories = {
         'slug': 'snacks',
         'description': 'Crunchy snacks and crackers for every craving.',
         'products': [
-            ('Piattos Cheese', 45.00, 90, 'products/Piattoscheese.jpg'),
-            ('Nova Multigrain Snacks', 50.00, 85, 'products/Nova.webp'),
-            ('SkyFlakes Crackers', 35.00, 120, 'products/Skyflakes.webp'),
-            ('Rebisco Chocolate Crackers', 40.00, 100, 'products/RebiscoChoco.webp'),
+            ('Piattos Cheese', 45.00, 90, 'products/snacks/piattos.webp'),
+            ('Nova Multigrain Snacks', 50.00, 85, 'products/snacks/nova.webp'),
+            ('SkyFlakes Crackers', 35.00, 120, 'products/snacks/skyflakes.webp'),
+            ('Rebisco Chocolate Crackers', 40.00, 100, 'products/snacks/rebisco.png'),
         ],
     },
     'beverages': {
@@ -52,10 +52,10 @@ categories = {
         'slug': 'beverages',
         'description': 'Refreshing drinks to quench your thirst.',
         'products': [
-            ('Coca-Cola Mismo', 55.00, 70, 'products/CokeMismo.jpg'),
-            ('Wilkins Pure Bottled Water', 25.00, 150, 'products/Wilkins water.jpg'),
-            ('C2 Green Tea', 35.00, 100, 'products/c2Greentea.webp'),
-            ('Zest-O Orange Juice', 40.00, 80, 'products/ZestoOrange.jpg'),
+            ('Coca-Cola Mismo', 55.00, 70, 'products/beverage/coke.webp'),
+            ('Wilkins Pure Bottled Water', 25.00, 150, 'products/beverage/wilkins.jpg'),
+            ('C2 Green Tea', 35.00, 100, 'products/beverage/c2_red.jpg'),
+            ('Zest-O Orange Juice', 40.00, 80, 'products/beverage/zest_o.webp'),
         ],
     },
     'household-essentials': {
@@ -63,10 +63,10 @@ categories = {
         'slug': 'household-essentials',
         'description': 'Cleaning and personal care products.',
         'products': [
-            ('Surf Powder Detergent', 95.00, 60, 'products/SurfPowder.webp'),
-            ('Joy Dishwashing Liquid', 75.00, 55, 'products/Joy.jpg'),
-            ('Safeguard Soap', 40.00, 90, 'products/Safeguard.jpg'),
-            ('Palmolive Shampoo', 85.00, 65, 'products/Palmolive.jpg'),
+            ('Surf Powder Detergent', 95.00, 60, 'products/household/surf.jpg'),
+            ('Joy Dishwashing Liquid', 75.00, 55, 'products/household/joy.jpg'),
+            ('Safeguard Soap', 40.00, 90, 'products/household/safeguard.webp'),
+            ('Palmolive Shampoo', 85.00, 65, 'products/household/palmolive.webp'),
         ],
     },
 }

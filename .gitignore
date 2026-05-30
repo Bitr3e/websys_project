@@ -15,9 +15,6 @@ uv.lock
 *.sqlite3
 db.sqlite3
 
-# Media uploads
-media/products/
-
 # Environment
 .env
 .env.*
