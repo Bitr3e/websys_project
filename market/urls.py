@@ -3,11 +3,13 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from catalog import views as catalog_views
+from market import views as market_views
 
 handler404 = catalog_views.custom_404
 handler500 = catalog_views.custom_500
 
 urlpatterns = [
+    path('sw.js', market_views.service_worker, name='service_worker'),
     path('admin/', admin.site.urls),
     path('cart/', include('cart.urls')),
     path('checkout/', include('checkout.urls')),

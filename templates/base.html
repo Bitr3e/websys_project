@@ -5,6 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title %}7-Evelyn{% endblock %} | 7-Evelyn</title>
+  <link rel="manifest" href="{% static 'manifest.json' %}">
+  <meta name="theme-color" content="#1a3a2a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="/media/app_icon.png">
   <link rel="stylesheet" href="{% static 'css/market.css' %}">
   <script>
     (function() {
@@ -129,6 +134,11 @@
     </div>
   </footer>
 
+  <script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js');
+}
+</script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       var toggle = document.querySelector('.nav-toggle');
