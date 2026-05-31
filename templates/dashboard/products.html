@@ -2,13 +2,13 @@
 {% block title %}Products{% endblock %}
 
 {% block dashboard_content %}
-<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
-  <h1 style="margin:0;">Products</h1>
+<div class="dashboard-header">
+  <h1>Products</h1>
   <a href="{% url 'dashboard:dashboard_product_add' %}" class="btn btn-primary">+ Add Product</a>
 </div>
 
-<form method="get" style="margin-bottom:16px;display:flex;gap:8px;max-width:400px;">
-  <input type="text" name="q" placeholder="Search products..." value="{{ query }}" style="flex:1;padding:8px 14px;border:2px solid var(--gray-200);border-radius:var(--radius-sm);font-size:0.9rem;">
+<form method="get" class="search-form" style="margin-bottom:16px;display:flex;gap:8px;max-width:400px;">
+  <input type="text" name="q" placeholder="Search products..." value="{{ query }}">
   <button type="submit" class="btn btn-sm btn-primary">Search</button>
   {% if query %}<a href="{% url 'dashboard:dashboard_products' %}" class="btn btn-sm btn-outline">Clear</a>{% endif %}
 </form>
@@ -16,7 +16,7 @@
 <div class="table-responsive">
   <table class="dashboard-table">
     <thead>
-      <tr><th></th><th>Name</th><th>Category</th><th>Price</th><th>Stock</th><th>Available</th><th>Actions</th></tr>
+      <tr><th>Image</th><th>Name</th><th>Category</th><th>Price</th><th>Stock</th><th>Available</th><th>Actions</th></tr>
     </thead>
     <tbody>
       {% for product in products %}
@@ -39,7 +39,7 @@
         </td>
       </tr>
       {% empty %}
-      <tr><td colspan="7" style="text-align:center;color:var(--gray-500);">No products yet.</td></tr>
+      <tr><td colspan="7" class="empty-state">No products yet.</td></tr>
       {% endfor %}
     </tbody>
   </table>

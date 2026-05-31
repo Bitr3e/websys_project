@@ -26,11 +26,15 @@
       <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
       <ul class="navbar-nav">
         <li><a href="{% url 'catalog:product_list' %}">Home</a></li>
+        {% if not user.is_staff %}
         <li><a href="{% url 'cart:cart_detail' %}">
           Cart {% if cart_count %}<span class="badge-cart">{{ cart_count }}</span>{% endif %}
         </a></li>
+        {% endif %}
         {% if user.is_authenticated %}
+          {% if not user.is_staff %}
           <li><a href="{% url 'orders:order_history' %}">Orders</a></li>
+          {% endif %}
           {% if user.is_staff %}
             <li><a href="{% url 'dashboard:dashboard_home' %}">Admin</a></li>
           {% endif %}
